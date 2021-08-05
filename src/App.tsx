@@ -1,28 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { getAllPosts, getPostByID } from './api/MainApi';
 import { PostInterface } from './interfaces/interfaces';
-
+import {Header} from "./components/Header/Header";
+import {BlogHeader} from "./components/BlogHeader/BlogHeader";
+import {BlogMain} from "./components/BlogMain/BlogMain";
 import './App.sass';
 
 const App = () => {
-  const [posts, setPosts] = useState<PostInterface[]>([]);
-
-  const getPostsData = () => {
-    getAllPosts()
-        .then((data) => {
-            setPosts(data);
-        })
-        .catch((err) => console.error(err));
-}
-
-  useEffect(() => {
-    getPostsData();
-    }, [])
-
-  console.log(posts);
 
   return (
     <div className="App">
+      <Header />
+      <main id="main">
+        <BlogHeader />
+        <BlogMain />
+      </main>
     </div>
   );
 }
