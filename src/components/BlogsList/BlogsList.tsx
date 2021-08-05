@@ -22,11 +22,15 @@ export const BlogsList: React.FC = () => {
   return (
     <div className="col-md-8 col-sm-8 col-xs-12">
       <div className="row">
-        <SingleBlog />
-        <SingleBlog />
-        <SingleBlog />
-        <SingleBlog />
-        <SingleBlog />
+        {posts.map((post) =>  (
+            <SingleBlog
+              createdAt={post.createdAt}
+              title={post.title}
+              preview={post.preview}
+              image={post.image}
+              description={post.description}
+              key={post.id} />
+          ))}
 
         <div className="blog-pagination">
           <ul className="pagination">
