@@ -1,3 +1,8 @@
-export interface Post {
-
+export interface PostInterface {
+  id?: string,
+  createdAt: string,
+  title: string,
+  preview: string,
+  image: string,
+  description: string
 }
