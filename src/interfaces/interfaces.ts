@@ -6,3 +6,8 @@ export interface PostInterface {
   image: string,
   description: string
 }
+
+export interface BlogsListProps {
+  loading?: boolean,
+  posts?: PostInterface[]
+}
