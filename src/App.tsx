@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { getAllPosts, getPostByID } from './api/MainApi';
-import { PostInterface } from './interfaces/interfaces';
+import React from 'react';
 import {Header} from "./components/Header/Header";
 import {BlogHeader} from "./components/BlogHeader/BlogHeader";
 import {BlogMain} from "./components/BlogMain/BlogMain";
