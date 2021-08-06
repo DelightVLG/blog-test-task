@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PostInterface } from "../../interfaces/interfaces";
 
 export const SingleBlog: React.FC<PostInterface> = (
@@ -8,13 +9,13 @@ export const SingleBlog: React.FC<PostInterface> = (
     <div className="col-md-12 col-sm-12 col-xs-12">
       <div className="single-blog">
         <div className="single-blog-img">
-          <a href={`/${id}`}><img src={image} alt={title} /></a>
+          <Link to={`/${id}`}><img src={image} alt={title} /></Link>
         </div>
 
         <div className="blog-meta">
           <span className="comments-type">
             <i className="bi bi-chat" />
-            <a href={`/${id}`}>{Math.ceil(Math.random() * 100)} comments</a>
+            <Link to={`/${id}`}>{Math.ceil(Math.random() * 100)} comments</Link>
           </span>
 
           <span className="date-type">
@@ -24,7 +25,7 @@ export const SingleBlog: React.FC<PostInterface> = (
 
         <div className="blog-text">
           <h4>
-            <a href={`/${id}`}>{title}</a>
+            <Link to={`/${id}`}>{title}</Link>
           </h4>
           <p>
             {description}
@@ -32,7 +33,7 @@ export const SingleBlog: React.FC<PostInterface> = (
         </div>
 
         <span>
-          <a href={`/${id}`} className="ready-btn">Read more</a>
+          <Link to={`/${id}`} className="ready-btn">Read more</Link>
         </span>
       </div>
     </div>

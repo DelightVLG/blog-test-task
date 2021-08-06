@@ -8,6 +8,7 @@ interface PaginationInterface {
 
 export const Pagination: React.FC<PaginationInterface> = (
   { postPerPage, totalPosts, paginate}) => {
+
   const pageNumbers: number[] = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
@@ -20,7 +21,7 @@ export const Pagination: React.FC<PaginationInterface> = (
           return (
             <li className="page-item" key={number}>
               <a
-                className="page-link" href="!#"
+                className="page-link" href="#"
                 onClick={() => paginate(number)}>
                 {number}
               </a>
