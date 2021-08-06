@@ -7,9 +7,9 @@ import { RecentPosts } from '../../components/RecentPosts/RecentPosts';
 import { Categories } from '../../components/Categories/Categories';
 import { Archive } from '../../components/Archive/Archive';
 import { PopularTags } from '../../components/PopularTags/PopularTags';
-import { SingleBlogFull } from "../../components/SingleBlogFull/SingleBlogFull";
-import {getPostByID} from "../../api/MainApi";
-import {PostInterface} from "../../interfaces/interfaces";
+import { SingleBlogFull } from '../../components/SingleBlogFull/SingleBlogFull';
+import { getPostByID } from '../../api/MainApi';
+import { PostInterface } from '../../interfaces/interfaces';
 
 export const SingleBlogPage: React.FC = () => {
 
