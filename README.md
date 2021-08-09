@@ -7,6 +7,7 @@
 ▪️ Клонируйте репозиторий `$git clone https://github.com/DelightVLG/blog-test-task` <br/>
 ▪️ На компьютере должен быть установлен `node.js` <br/>
 ▪️ В корневой папке проекта:  <br/>
+`npm install` - устанавливает dev зависимости для запуска проекта
 `npm run start` — запускает приложение локально на `http://localhost:3000` <br/>
 `npm run build` — собирает приложения для деплоя <br/>
 
